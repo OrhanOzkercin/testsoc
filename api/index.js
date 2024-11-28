@@ -1,11 +1,7 @@
-const express = require("express");
-const app = express();
+export default function handler(req, res) {
+  console.log("Request body:", req.body);
+  console.log("Request headers:", req.headers);
 
-app.get("/", (req, res) => {
-  console.log({ req });
-  console.log({ res });
-});
-
-app.listen(3000, () => {
-  console.log("Server is running on http://localhost:4000");
-});
+  // Örnek bir cevap gönderelim
+  res.status(200).json({ message: "Hello from Serverless Function!" });
+}
