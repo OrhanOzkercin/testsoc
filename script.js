@@ -9,4 +9,7 @@ window.onload = function () {
   const pre = document.createElement("pre");
   pre.textContent = JSON.stringify(navigator.userAgent, null, 2);
   document.body.appendChild(pre);
+  const refferer = document.createElement("pre");
+  pre.textContent = JSON.stringify(document.referrer, null, 2);
+  document.body.appendChild(refferer);
 };
