@@ -1,7 +1,7 @@
 console.log(navigator);
 
 window.onload = function () {
-  fetch("http://localhost:3000")
+  fetch("api/index")
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.error("Error:", error));
